@@ -15,7 +15,7 @@ app.on('text', ctx => {
 const subreddit = ctx.message.text;
 
 // GET the data from Reddit API
- axios.get(`https://reddit.com/r/${subreddit}/top.json?limit=10`)
+ axios.get(`https://gismeteo.ru/r/${subreddit}/top.json?limit=10`)
  .then(res => {
 
 // data recieved from Reddit
@@ -26,7 +26,7 @@ const subreddit = ctx.message.text;
  return ctx.reply('Не найдено');
 
 // send the first top post link to the user
- const link = `https://reddit.com/${data.children[0].data.permalink}`;
+ const link = `https://gismeteo.ru/${data.children[0].data.permalink}`;
  return ctx.reply(link);
  })
 
