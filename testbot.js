@@ -1,5 +1,5 @@
 const Telegraf = require('telegraf');
-const app = new Telegraf(928852165:AAH0EauTDjAiNtR4rLQbG0pA1OWSIEGtJCw);
+const app = new Telegraf('928852165:AAH0EauTDjAiNtR4rLQbG0pA1OWSIEGtJCw');
 
 app.hears('hi', ctx => {
  return ctx.reply('Hey!');
